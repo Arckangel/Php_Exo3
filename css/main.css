@@ -1,0 +1,73 @@
+/* --------------------- Fonts --------------------- */
+@font-face {
+    font-family: "GelPenUpright";
+    src: url('../fonts/GelPenUprightLight.ttf');
+}
+
+/* --------------------- Global --------------------- */
+html,body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'GelPenUpright';
+    margin: 0;
+}
+
+.valign{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/* --------------------- Card wrap --------------------- */
+.recto-card, .verso-card{
+    position: absolute;
+    height: 250px;
+    max-width: 570px;
+    margin-bottom: 50px;
+    margin-top: 150px;
+    padding: 50px;
+    color: white;
+    /*background: linear-gradient(to bottom, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 13%,rgba(215,222,227,1) 17%,rgba(245,247,249,1) 100%);*/
+}
+
+.recto-card{
+    text-align: center;
+    box-shadow: 0 0 10px #3b3b3b;
+}
+
+.verso-card{
+  opacity: 0;
+}
+
+.verso-card:hover{
+  opacity: 1;
+}
+
+
+/* --------------------- Social Network --------------------- */
+.social-network{
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-network li{
+    float: left;
+    margin: 10px;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: rgb(207, 207, 207);
+  text-decoration: none;
+}
+
+a:focus{
+  color: rgb(207, 207, 207);
+  text-decoration: none;
+}
